@@ -27,3 +27,11 @@ export const increment = () => {
     type: INCREMENT,
   }
 }
+
+export const asyncIncrement = () => {
+  return (dispatch, getState) => {
+    setTimeout(() => {
+      dispatch(increment());
+    }, 1000);
+  }
+}
