@@ -5,7 +5,8 @@ import counter from './counter/redux';
 const stroe = createStore(
   combineReducers({
     counter,
-  })
-)
+  }),
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 export default stroe;
