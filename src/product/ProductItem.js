@@ -2,9 +2,8 @@ import { React } from 'react';
 import noImage from '../images/no_image.png';
 
 const ProductItem = (props) => {
-  console.log("props",props)
   return (
-    <div className="px-3 mb-8">
+    <div className="px-3 mb-8 w-1/2 xl:w-1/3">
       <div className="relative md:h-full lg:h-full">
         <div
           id={`product_${props.id}`}

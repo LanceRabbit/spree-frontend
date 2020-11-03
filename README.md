@@ -11,5 +11,5 @@ yarn build:tailwind
 - set .evn file
 
 ```shell
-cp .env.example .evn
+cp .env.example .env
 ```
